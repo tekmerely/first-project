@@ -66,42 +66,46 @@ a {
   transition: var(--transition);
 }
 .btn:hover {
-  background: var(--clr-white);
+  background: #ffc40062;;
   color: var(--clr-yellow);
+  font-weight: 900;
 }
 /*
 =====================
 header
 =====================
 */
-nav {
-  background: var(--clr-yellow);
+ul{
   width: 100%;
-}
-nav ul {
-  width: 85%;
-}
-nav ul li {
-  position: relative;
-  display: inline-block;
-  font-size: 1rem;
+  position: absolute;
   top: 0px;
   right: 0px;
+  background: var(--clr-yellow);
+}
+
+ul li {
+  float: right;
+  font-size: 1rem;
   padding: 15px 15px;
   transition: var(--transition);
+  list-style: none;
 }
-nav ul li:hover {
+
+ul li:hover{
   background: var(--clr-primary);
   color: var(--clr-yellow);
 }
-nav ul li a {
+
+ul li:hover a{
+  color: var(--clr-yellow);
+}
+
+ul li a {
   color: var(--clr-primary);
   display: inline-block;
   font-family: var(--ff-bold);
 }
-nav ul li a:hover {
-  color: var(--clr-yellow);
-}
+
 .header {
   position: relative;
   height: 100vh;
@@ -125,8 +129,8 @@ nav ul li a:hover {
   color: var(--clr-white);
 }
 .btn-1 {
-  outline: 0.075rem solid var(--clr-yellow);
-  outline-offset: 0.4rem;
+  outline: 1px solid var(--clr-yellow);
+  outline-offset:5px;
 }
 .content-divider {
   height: 0.3rem;
